@@ -9,7 +9,7 @@
     <style>
         body {
             margin: 40px 0;
-            background-color: #ffffff;
+            background-color: #F8F9FA;
         }
 
         table {
@@ -50,7 +50,7 @@
             text-align: center;
             font-size: 30px;
             justify-content: center;
-            word-spacing: 12px;
+            word-spacing: 15px;
             padding-top: 15px;
             padding-bottom: 10px;
             padding-left: 15px;
@@ -59,10 +59,9 @@
 
         .two-columns .column {
             width: 100%;
-            max-width: 250px;
+            max-width: 253px;
             display: inline-block;
             vertical-align: top;
-            /* border-style: 5px solid black; */
         }
 
         .column {
@@ -86,6 +85,31 @@
             font-weight:400;
             word-spacing: normal;
         }
+        .vuln-tables{
+            margin-left:35px;
+            margin-bottom:15px;
+            border: 1px solid  #EFF1F4;
+            border-radius:4px;
+            width:88.5%;
+        }
+        .vulnerability-1{
+            padding-left:15px;
+            padding-top: 20px;        
+        }
+        .vuln-titles{
+            padding-right:3px;
+            font-size:12px;
+            font-weight:400;
+            color:#666666
+        }
+        .vuln-colon{
+            font-size:12px;
+            padding-right:3px;
+        }
+        .vuln-desc{
+            font-size:12px;
+            font-weight: 600;
+        }
     </style>
 </head>
 
@@ -96,15 +120,15 @@
 
             <!--Pingsafe Logo-->
             <tr>
-                <td style="text-align: left; padding-left:35px;padding-bottom: 13px;"><a
-                        href="https://pingsafe.com"><img src="./pingsafe logo.jpg" alt="Pingsafe Logo image"></a></td>
+                <td style="background-color:#F8F9FA;text-align: left; padding-left:35px;padding-bottom: 13px;"><a
+                        href="https://pingsafe.com"><img width="100px" height="48px" src="./images/PingSafe Logo.png" alt="Pingsafe Logo image"></a></td>
             </tr>
 
             <!--Banner Area-->
             <tr style="background:linear-gradient(to right, #043CD0 , #03298E);">
                 <td
                     style="text-align: left;padding-left:35px; padding-top:40px;border-top-left-radius: 5px;border-top-right-radius: 5px;">
-                    <img style="border-radius:50%" src="./finder logo final-modified new.jpg"
+                    <img style="border-radius:50%" src="./images/finder logo.jpg"
                         alt="cloud search icon image">
                 </td>
             </tr>
@@ -120,6 +144,7 @@
             </tr>
 
             <!--Account Name Area-->
+
             <tr>
                 <td>
                     <table style="padding-top:35px;">
@@ -130,7 +155,7 @@
                             <td>
                                 <table class="account-info">
                                     <tr>
-                                        <td><img width="32px" src="./aws logo 2 full.png"></td>
+                                        <td><img width="32px" src="./images/aws logo.png" alt="aws brand logo"></td>
                                         <td style="padding-left:5px;padding-right:5px;font-size:12px;font-weight:600;">
                                             Amazon Test</td>
                                     </tr>
@@ -142,6 +167,7 @@
             </tr>
 
             <!--Vulnerability Stats-->
+
             <tr>
                 <td style="padding:14px 0 4px">
                     <table width="100%">
@@ -170,7 +196,7 @@
                                                         Critical Severity
                                                     </td>
                                                     <td style="    padding-bottom: 2px;">
-                                                        <img src="./first dots.jpg">
+                                                        <img src="./images/first dot.jpg" alt="critical severity image">
                                                     </td>
                                                 </tr>
                                             </table>
@@ -187,7 +213,41 @@
                                                         High Severity
                                                     </td>
                                                     <td style="    padding-bottom: 2px;">
-                                                        <img src="./first dots.jpg">
+                                                        <img src="./images/sec dot.jpg" alt="high severity image">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table >
+                                                <tr>
+                                                    <td class="stat-data-num" style="padding-left: 25px;padding-right: 4px;text-align: left;">
+                                                        32
+                                                    </td>
+                                                    <td class="stat-data-text" style="color: #666666;">
+                                                        Medium Severity
+                                                    </td>
+                                                    <td style="    padding-bottom: 2px;">
+                                                        <img style="padding-left:2px" src="./images/third dot.jpg" alt="medium severity image">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table >
+                                                <tr>
+                                                    <td class="stat-data-num" style="padding-left: 25px;padding-right: 4px;text-align: left;">
+                                                        11
+                                                    </td>
+                                                    <td class="stat-data-text" style="color: #666666;">
+                                                        Low Severity
+                                                    </td>
+                                                    <td style="    padding-bottom: 2px;">
+                                                        <img style="padding-left:2px" src="./images/fourth dot.jpg" alt="low severity image">
                                                     </td>
                                                 </tr>
                                             </table>
@@ -207,6 +267,74 @@
                                             Vulnerable Resources
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td>
+                                            <table style="padding-top:10px ;">
+                                                <tr>
+                                                    <td class="stat-data-num" style="padding-left: 25px;padding-right: 4px;text-align: left;">
+                                                        23
+                                                    </td>
+                                                    <td class="stat-data-text" style="color: #666666;">
+                                                        Critical Severity
+                                                    </td>
+                                                    <td style="    padding-bottom: 2px;">
+                                                        <img src="./images/first dot.jpg" alt="critical severity image">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table >
+                                                <tr>
+                                                    <td class="stat-data-num" style="padding-left: 25px;padding-right: 4px;text-align: left;">
+                                                        12
+                                                    </td>
+                                                    <td class="stat-data-text" style="color: #666666;">
+                                                        High Severity
+                                                    </td>
+                                                    <td style="    padding-bottom: 2px;">
+                                                        <img src="./images/sec dot.jpg" alt="high severity image">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table >
+                                                <tr>
+                                                    <td class="stat-data-num" style="padding-left: 25px;padding-right: 4px;text-align: left;">
+                                                        32
+                                                    </td>
+                                                    <td class="stat-data-text" style="color: #666666;">
+                                                        Medium Severity
+                                                    </td>
+                                                    <td style="    padding-bottom: 2px;">
+                                                        <img style="padding-left:2px" src="./images/third dot.jpg" alt="medium severity image">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table >
+                                                <tr>
+                                                    <td class="stat-data-num" style="padding-left: 25px;padding-right: 4px;text-align: left;">
+                                                        11
+                                                    </td>
+                                                    <td class="stat-data-text" style="color: #666666;">
+                                                        Low Severity
+                                                    </td>
+                                                    <td style="    padding-bottom: 2px;">
+                                                        <img style="padding-left:2px" src="./images/fourth dot.jpg" alt="low severity image">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
                                 </table>
                             </td>
                         </tr>
@@ -214,6 +342,143 @@
                 </td>
             </tr>
 
+            <!--Top Vulnerabilities Discovered Area-->
+
+            <tr>
+                <td style="padding-left: 35px;font-size:14px;font-weight:600;text-align:left">
+                    Top Vulnerabilities Discovered
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-top: 30px;">
+                    <table class="vuln-tables">
+                        <tr >
+                            <td >
+                                <table class="vulnerability-1">
+                                    <tr>
+                                        <td class="vuln-titles">Issues </td>
+                                        <td class="vuln-colon">:</td>
+                                        <td class="vuln-desc">AWS IAM root account is being used actively</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <table class="vulnerability-1">
+                                    <tr>
+                                        <td class="vuln-titles">Affected Resources</td>
+                                        <td class="vuln-colon">:</td>
+                                        <td class="vuln-desc">1</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="vulnerability-1" style="padding-top: 13px;padding-bottom:10px;">
+                                    <tr>
+                                        <td class="vuln-titles">Severity</td>
+                                        <td class="vuln-colon">:</td>
+                                        <td class="vuln-desc" style="display: inline-block;">
+                                        <td class="vuln-desc" style="color:red">High</td>
+                                        <td><img style="padding-top:5px;" src="./images/first dot.jpg" alt="critical severity image"></td>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <table class="vuln-tables">
+                        <tr >
+                            <td >
+                                <table class="vulnerability-1">
+                                    <tr>
+                                        <td class="vuln-titles">Issues </td>
+                                        <td class="vuln-colon">:</td>
+                                        <td class="vuln-desc">The private endpoint setting is not enabled for EKS ckusters</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <table class="vulnerability-1">
+                                    <tr>
+                                        <td class="vuln-titles">Affected Resources</td>
+                                        <td class="vuln-colon">:</td>
+                                        <td class="vuln-desc">1</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="vulnerability-1" style="padding-top: 13px;padding-bottom:10px;">
+                                    <tr>
+                                        <td class="vuln-titles">Severity</td>
+                                        <td class="vuln-colon">:</td>
+                                        <td class="vuln-desc" style="display: inline-block;">
+                                        <td class="vuln-desc" style="color:red">High</td>
+                                        <td><img style="padding-top:5px;" src="./images/first dot.jpg" alt="critical severity image"></td>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!--View Results Button Area-->
+            <tr>
+                <td style="padding-left:35px;padding-top:20px;padding-bottom:35px;text-align:left;">
+                    <button style="background-color: #043CD0;color:#ffffff;border:none;border-radius:4px;padding:12px 24px">View results on PingSafe</button>
+                </td>
+            </tr>
+
+            <!--Footer Area-->
+
+            <tr style="background-color: #F8F9FA;">
+                <td>
+                    <table width="100%" style="padding-left: 35px;padding-top: 25px;text-align: left;font-size:12px;color: #888888;">
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td style="font-weight:400;width: 225px;">For any instant help, please contact us at</td>
+                                        <td style="font-weight:700;"><a href="mailto:support@pingsafe.com">support@pingsafe.com</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table style="padding-top: 25px;padding-bottom:30px">
+                                    <tr>
+                                        <td style="padding-right:40px;"><img src="./images/twitter.png" alt="twitter logo"></td>
+                                        <td><img src="./images/linkedin.png" alt="linkedin logo"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top:10px;">PingSafe, Inc.</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top:10px;padding-bottom: 10px;">548 Market St, San Francisco, California 94104, US</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top:10px;font-size:8px;font-weight:400px;text-decoration: underline;">Unsubscribe</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           
         </table>
     </div>
 
