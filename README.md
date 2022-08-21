@@ -32,7 +32,7 @@ There are certain rules needed to follow to make your code all email client comp
 | High Severity | ![#FF0000](https://via.placeholder.com/10/FF0000?text=+) #FF0000 |
 | Sub-header Text  | ![#666666](https://via.placeholder.com/10/666666?text=+) #666666 |
 | Borders Color | ![#EFF1F4](https://via.placeholder.com/10/EFF1F4?text=+) #EFF1F4 |
-| Banner color 1| ![#043CD0, #03298E](https://via.placeholder.com/10/043CD0?text=+)#043CD0 |
+| Banner color 1| ![#043CD0](https://via.placeholder.com/10/043CD0?text=+)#043CD0 |
 | Banner color 2 | ![#03298E](https://via.placeholder.com/10/03298E?text=+) #03298E |
 | Account Info Background  | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
 
