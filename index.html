@@ -6,8 +6,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <style>
         /* General CSS*/
+        body {
+            margin: 40px 0;
+            background-color: #F8F9FA;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
+        /* Wrapper Classes */
+
+        .wrapper {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            table-layout: fixed;
+        }
+
+        .main {
+            background-color: #FFFFFF;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-spacing: 0;
+            font-family: 'Open Sans', Arial, Tahoma, Verdana, sans-serif;
+        }
+
+        /* Banner Area CSS*/
+
+        /* .banner-main {
+            background: linear-gradient(to right, #043CD0, #03298E);
+        }
+
+        .banner-elements {
+            text-align: left;
+            padding-left: 35px;
+            color: #FFFFFF;
+        } */
+
+        /* Account Name Area CSS*/
+
+        /* .account-info {
+            display: inline-block;
+            padding-top: 5px;
+            background-color: #EEEEEE;
+        } */
+
+        /*Vulnerability Stats Area CSS*/
+
+        .two-columns {
+            text-align: center;
+            font-size: 30px;
+            justify-content: center;
+            word-spacing: 15px;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .two-columns .column {
+            width: 100%;
+            max-width: 253px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .column {
+            border: 1px solid #EFF1F4;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* .stat-heading {
+            text-align: left;padding-left: 25px;word-spacing: normal;
+        }
+
+        .stat-first-line {
+            padding-top: 23px;font-size: 24px;font-weight: 700
+        }
+
+        .stat-second-line {
+            padding-top: 7px;font-size: 14px;font-weight: 600;
+        }
+
+        .stat-data-num {
+            font-size: 12px;font-weight: 700;word-spacing: normal;padding-left: 25px;padding-right: 4px;text-align: left;
+        }
+
+        .stat-data-text {
+            font-size: 12px;font-weight: 400;word-spacing: normal;color: #666666;
+        } */
+
+        /*Top Vulnerabilities Discovered Area CSS*/
+
+        /* .vuln-tables {
+            margin-left: 35px;margin-bottom: 15px;border: 1px solid #EFF1F4;border-radius: 4px;width: 88.5%;
+        }
+
+        .vulnerability-1 {
+            padding-left: 15px;padding-top: 20px;
+        }
+
+        .vuln-titles {
+            padding-right: 3px;font-size: 12px;font-weight: 400;color: #666666
+        }
+
+        .vuln-colon {
+            font-size: 12px;padding-right: 3px;
+        }
+
+        .vuln-desc {
+            font-size: 12px;font-weight: 600;
+        } */
+    </style>
+    <!--[if mso]>
         body {
             margin: 40px 0;
             background-color: #F8F9FA;
@@ -90,100 +215,73 @@
         }
 
         .stat-heading {
-            text-align: left;
-            padding-left: 25px;
-            word-spacing: normal;
+            text-align: left;padding-left: 25px;word-spacing: normal;
         }
 
         .stat-first-line {
-            padding-top: 23px;
-            font-size: 24px;
-            font-weight: 700
+            padding-top: 23px;font-size: 24px;font-weight: 700
         }
 
         .stat-second-line {
-            padding-top: 7px;
-            font-size: 14px;
-            font-weight: 600;
+            padding-top: 7px;font-size: 14px;font-weight: 600;
         }
 
         .stat-data-num {
-            font-size: 12px;
-            font-weight: 700;
-            word-spacing: normal;
-            padding-left: 25px;
-            padding-right: 4px;
-            text-align: left;
+            font-size: 12px;font-weight: 700;word-spacing: normal;padding-left: 25px;padding-right: 4px;text-align: left;
         }
 
         .stat-data-text {
-            font-size: 12px;
-            font-weight: 400;
-            word-spacing: normal;
-            color: #666666;
+            font-size: 12px;font-weight: 400;word-spacing: normal;color: #666666;
         }
 
         /*Top Vulnerabilities Discovered Area CSS*/
 
         .vuln-tables {
-            margin-left: 35px;
-            margin-bottom: 15px;
-            border: 1px solid #EFF1F4;
-            border-radius: 4px;
-            width: 88.5%;
+            margin-left: 35px;margin-bottom: 15px;border: 1px solid #EFF1F4;border-radius: 4px;width: 88.5%;
         }
 
         .vulnerability-1 {
-            padding-left: 15px;
-            padding-top: 20px;
+            padding-left: 15px;padding-top: 20px;
         }
 
         .vuln-titles {
-            padding-right: 3px;
-            font-size: 12px;
-            font-weight: 400;
-            color: #666666
+            padding-right: 3px;font-size: 12px;font-weight: 400;color: #666666
         }
 
         .vuln-colon {
-            font-size: 12px;
-            padding-right: 3px;
+            font-size: 12px;padding-right: 3px;
         }
 
         .vuln-desc {
-            font-size: 12px;
-            font-weight: 600;
+            font-size: 12px;font-weight: 600;
         }
-    </style>
+    <![endif]-->   
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <table class="main" width="100%">
+    <div class="wrapper" role="article">
+        <table class="main" width="100%" role="presentation">
 
             <!--Pingsafe Logo-->
             <tr>
                 <td style="background-color:#F8F9FA;text-align: left; padding-left:35px;padding-bottom: 13px;"><a
-                        href="https://pingsafe.com"><img width="100px" height="48px" src="./images/PingSafe Logo.png"
+                        href="https://pingsafe.com"><img width="100px" height="48px" src="https://uploads-ssl.webflow.com/630228e0fbb6ee2e73e27f9b/63022944439fa63304ec5dcc_PingSafe%20Logo.png"
                             alt="Pingsafe Logo image"></a></td>
             </tr>
 
             <!--Banner Area-->
-            <tr class="banner-main">
-                <td class="banner-elements"
-                    style="padding-top:40px;border-top-left-radius: 5px;border-top-right-radius: 5px;">
-                    <img style="border-radius:50%" src="./images/finder logo.jpg" alt="cloud search icon image">
+            <tr class="banner-main" style="background: linear-gradient(to right, #043CD0, #03298E);">
+                <td class="banner-elements" style="text-align: left;padding-left: 35px;color: #FFFFFF;padding-top:40px;border-top-left-radius: 5px;border-top-right-radius: 5px;">
+                    <img style="border-radius:50%" src="https://uploads-ssl.webflow.com/630228e0fbb6ee2e73e27f9b/63022922fbb6ee46b2e288c3_finder%20logo.jpg" alt="cloud search icon image">
                 </td>
             </tr>
-            <tr class="banner-main ">
-                <td class="banner-elements"
-                    style="padding-right:35px;padding-top:15px;font-size: 20px;font-weight: 700;">
+            <tr class="banner-main" style="background: linear-gradient(to right, #043CD0, #03298E);">
+                <td class="banner-elements" style="text-align: left;padding-left: 35px;color: #FFFFFF;padding-right:35px;padding-top:15px;font-size: 20px;font-weight: 700;">
                     Your cloud account has been scanned</td>
             </tr>
-            <tr class="banner-main">
-                <td class="banner-elements"
-                    style="padding-right:35px;padding-top:18px;padding-bottom:45px;font-size:14px;font-weight:400px;color:#E6E6E6">
+            <tr class="banner-main" style="background: linear-gradient(to right, #043CD0, #03298E);">
+                <td class="banner-elements" style="text-align: left;padding-left: 35px;color: #FFFFFF;padding-right:35px;padding-top:18px;padding-bottom:45px;font-size:14px;font-weight:400px;color:#E6E6E6">
                     Your AWS account has been scanned and found 145 security misconfigurations.</td>
             </tr>
 
@@ -191,15 +289,15 @@
 
             <tr>
                 <td>
-                    <table style="padding-top:35px;">
+                    <table style="padding-top:35px;" role="presentation">
                         <tr>
                             <td
                                 style="padding-left:35px;padding-right:10px;font-size: 14px;font-weight: 600;line-height: 28px;">
                                 Account :</td>
                             <td>
-                                <table class="account-info">
+                                <table class="account-info" style="display: inline-block;padding-top: 5px;background-color: #EEEEEE;" role="presentation">
                                     <tr>
-                                        <td><img width="32px" src="./images/aws logo.png" alt="aws brand logo"></td>
+                                        <td><img width="32px" src="https://uploads-ssl.webflow.com/630228e0fbb6ee2e73e27f9b/6302291a27fc0de431efbd32_aws%20logo.png" alt="aws brand logo"></td>
                                         <td style="padding-left:5px;padding-right:5px;font-size:12px;font-weight:600;">
                                             Amazon Test</td>
                                     </tr>
@@ -214,32 +312,32 @@
 
             <tr>
                 <td style="padding:14px 0 4px">
-                    <table width="100%">
+                    <table width="100%" role="presentation">
                         <tr>
                             <td class="two-columns">
-                                <table class="column">
+                                <table class="column" role="presentation">
                                     <tr>
-                                        <td class="stat-heading stat-first-line">
+                                        <td class="stat-heading stat-first-line" style="text-align: left;padding-left: 25px;word-spacing: normal;padding-top: 23px;font-size: 24px;font-weight: 700">
                                             64
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="stat-heading stat-second-line">
+                                        <td class="stat-heading stat-second-line" style="text-align: left;padding-left: 25px;word-spacing: normal;padding-top: 7px;font-size: 14px;font-weight: 600;">
                                             Vulnerabilities
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <table style="padding-top:10px ;">
+                                            <table style="padding-top:10px ;" role="presentation">
                                                 <tr>
-                                                    <td class="stat-data-num">
+                                                    <td class="stat-data-num" style="font-size: 12px;font-weight: 700;word-spacing: normal;padding-left: 25px;padding-right: 4px;text-align: left;">
                                                         23
                                                     </td>
-                                                    <td class="stat-data-text">
+                                                    <td class="stat-data-text" style="font-size: 12px;font-weight: 400;word-spacing: normal;color: #666666;">
                                                         Critical Severity
                                                     </td>
                                                     <td style="padding-bottom: 2px;">
-                                                        <img src="./images/first dot.jpg" alt="critical severity image">
+                                                        <img src="https://uploads-ssl.webflow.com/630228e0fbb6ee2e73e27f9b/63022934226cea543f568661_first%20dot.jpg" alt="critical severity image">
                                                     </td>
                                                 </tr>
                                             </table>
@@ -247,16 +345,16 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <table>
+                                            <table role="presentation">
                                                 <tr>
-                                                    <td class="stat-data-num">
+                                                    <td class="stat-data-num" style="font-size: 12px;font-weight: 700;word-spacing: normal;padding-left: 25px;padding-right: 4px;text-align: left;" >
                                                         12
                                                     </td>
-                                                    <td class="stat-data-text">
+                                                    <td class="stat-data-text" style="font-size: 12px;font-weight: 400;word-spacing: normal;color: #666666;">
                                                         High Severity
                                                     </td>
                                                     <td style="padding-bottom: 2px;">
-                                                        <img src="./images/sec dot.jpg" alt="high severity image">
+                                                        <img src="https://uploads-ssl.webflow.com/630228e0fbb6ee2e73e27f9b/6302294b226cea1e2a5686aa_sec%20dot.jpg" alt="high severity image">
                                                     </td>
                                                 </tr>
                                             </table>
@@ -264,16 +362,16 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <table>
+                                            <table role="presentation">
                                                 <tr>
-                                                    <td class="stat-data-num">
+                                                    <td class="stat-data-num" style="font-size: 12px;font-weight: 700;word-spacing: normal;padding-left: 25px;padding-right: 4px;text-align: left;">
                                                         32
                                                     </td>
-                                                    <td class="stat-data-text">
+                                                    <td class="stat-data-text" style="font-size: 12px;font-weight: 400;word-spacing: normal;color: #666666;">
                                                         Medium Severity
                                                     </td>
                                                     <td style="padding-bottom: 2px;">
-                                                        <img style="padding-left:2px" src="./images/third dot.jpg"
+                                                        <img style="padding-left:2px" src="https://uploads-ssl.webflow.com/630228e0fbb6ee2e73e27f9b/6302294edac6945f64c05400_third%20dot.jpg"
                                                             alt="medium severity image">
                                                     </td>
                                                 </tr>
@@ -282,16 +380,16 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <table>
+                                            <table role="presentation">
                                                 <tr>
-                                                    <td class="stat-data-num">
+                                                    <td class="stat-data-num" style="font-size: 12px;font-weight: 700;word-spacing: normal;padding-left: 25px;padding-right: 4px;text-align: left;">
                                                         11
                                                     </td>
-                                                    <td class="stat-data-text">
+                                                    <td class="stat-data-text" style="font-size: 12px;font-weight: 400;word-spacing: normal;color: #666666;">
                                                         Low Severity
                                                     </td>
                                                     <td style="padding-bottom: 2px;">
-                                                        <img style="padding-left:2px" src="./images/fourth dot.jpg"
+                                                        <img style="padding-left:2px" src="https://uploads-ssl.webflow.com/630228e0fbb6ee2e73e27f9b/63022939226cea00a4568683_fourth%20dot.jpg"
                                                             alt="low severity image">
                                                     </td>
                                                 </tr>
@@ -300,29 +398,29 @@
                                     </tr>
                                 </table>
 
-                                <table class="column">
+                                <table class="column" role="presentation">
                                     <tr>
-                                        <td class="stat-heading stat-first-line">
+                                        <td class="stat- stat-first-line" style="text-align: left;padding-left: 25px;word-spacing: normal;padding-top: 23px;font-size: 24px;font-weight: 700">
                                             124
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="stat-heading stat-second-line">
+                                        <td class="stat-heading stat-second-line" style="text-align: left;padding-left: 25px;word-spacing: normal;padding-top: 7px;font-size: 14px;font-weight: 600;">
                                             Vulnerable Resources
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <table style="padding-top:10px ;">
+                                            <table style="padding-top:10px ;" role="presentation">
                                                 <tr>
-                                                    <td class="stat-data-num">
+                                                    <td class="stat-data-text" class="stat-data-num" style="font-size: 12px;font-weight: 700;word-spacing: normal;padding-left: 25px;padding-right: 4px;text-align: left;">
                                                         23
                                                     </td>
-                                                    <td class="stat-data-text">
+                                                    <td style="font-size: 12px;font-weight: 400;word-spacing: normal;color: #666666;">
                                                         Critical Severity
                                                     </td>
                                                     <td style="padding-bottom: 2px;">
-                                                        <img src="./images/first dot.jpg" alt="critical severity image">
+                                                        <img src="https://uploads-ssl.webflow.com/630228e0fbb6ee2e73e27f9b/63022934226cea543f568661_first%20dot.jpg" alt="critical severity image">
                                                     </td>
                                                 </tr>
                                             </table>
@@ -330,16 +428,16 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <table>
+                                            <table role="presentation">
                                                 <tr>
-                                                    <td class="stat-data-num">
+                                                    <td class="stat-data-num" style="font-size: 12px;font-weight: 700;word-spacing: normal;padding-left: 25px;padding-right: 4px;text-align: left;">
                                                         12
                                                     </td>
-                                                    <td class="stat-data-text">
+                                                    <td class="stat-data-text" style="font-size: 12px;font-weight: 400;word-spacing: normal;color: #666666;">
                                                         High Severity
                                                     </td>
                                                     <td style="padding-bottom: 2px;">
-                                                        <img src="./images/sec dot.jpg" alt="high severity image">
+                                                        <img src="https://uploads-ssl.webflow.com/630228e0fbb6ee2e73e27f9b/6302294b226cea1e2a5686aa_sec%20dot.jpg" alt="high severity image">
                                                     </td>
                                                 </tr>
                                             </table>
@@ -347,16 +445,16 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <table>
+                                            <table role="presentation">
                                                 <tr>
-                                                    <td class="stat-data-num">
+                                                    <td class="stat-data-num" style="font-size: 12px;font-weight: 700;word-spacing: normal;padding-left: 25px;padding-right: 4px;text-align: left;">
                                                         32
                                                     </td>
-                                                    <td class="stat-data-text">
+                                                    <td class="stat-data-text" style="font-size: 12px;font-weight: 400;word-spacing: normal;color: #666666;">
                                                         Medium Severity
                                                     </td>
                                                     <td style="padding-bottom: 2px;">
-                                                        <img style="padding-left:2px" src="./images/third dot.jpg"
+                                                        <img style="padding-left:2px" src="https://uploads-ssl.webflow.com/630228e0fbb6ee2e73e27f9b/6302294edac6945f64c05400_third%20dot.jpg"
                                                             alt="medium severity image">
                                                     </td>
                                                 </tr>
@@ -365,16 +463,16 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <table>
+                                            <table role="presentation">
                                                 <tr>
-                                                    <td class="stat-data-num">
+                                                    <td class="stat-data-num" style="font-size: 12px;font-weight: 700;word-spacing: normal;padding-left: 25px;padding-right: 4px;text-align: left;">
                                                         11
                                                     </td>
-                                                    <td class="stat-data-text">
+                                                    <td class="stat-data-text" style="font-size: 12px;font-weight: 400;word-spacing: normal;color: #666666;">
                                                         Low Severity
                                                     </td>
                                                     <td style="padding-bottom: 2px;">
-                                                        <img style="padding-left:2px" src="./images/fourth dot.jpg"
+                                                        <img style="padding-left:2px" src="https://uploads-ssl.webflow.com/630228e0fbb6ee2e73e27f9b/63022939226cea00a4568683_fourth%20dot.jpg"
                                                             alt="low severity image">
                                                     </td>
                                                 </tr>
@@ -397,38 +495,38 @@
             </tr>
             <tr>
                 <td style="padding-top: 30px;">
-                    <table class="vuln-tables">
+                    <table class="vuln-tables" style="margin-left: 35px;margin-bottom: 15px;border: 1px solid #EFF1F4;border-radius: 4px;width: 88.5%;" role="presentation">
                         <tr>
                             <td>
-                                <table class="vulnerability-1">
+                                <table class="vulnerability-1" style="padding-left: 15px;padding-top: 20px;" role="presentation">
                                     <tr>
-                                        <td class="vuln-titles">Issues </td>
-                                        <td class="vuln-colon">:</td>
-                                        <td class="vuln-desc">AWS IAM root account is being used actively</td>
+                                        <td class="vuln-titles" style="padding-right: 3px;font-size: 12px;font-weight: 400;color: #666666">Issues </td>
+                                        <td class="vuln-colon" style="font-size: 12px;padding-right: 3px;">:</td>
+                                        <td class="vuln-desc" style="font-size: 12px;font-weight: 600;">AWS IAM root account is being used actively</td>
                                     </tr>
                                 </table>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <table class="vulnerability-1">
+                                <table class="vulnerability-1" style="padding-left: 15px;padding-top: 20px;" role="presentation">
                                     <tr>
-                                        <td class="vuln-titles">Affected Resources</td>
-                                        <td class="vuln-colon">:</td>
-                                        <td class="vuln-desc">1</td>
+                                        <td class="vuln-titles" style="padding-right: 3px;font-size: 12px;font-weight: 400;color: #666666">Affected Resources</td>
+                                        <td class="vuln-colon" style="font-size: 12px;padding-right: 3px;">:</td>
+                                        <td class="vuln-desc" style="font-size: 12px;font-weight: 600;">1</td>
                                     </tr>
                                 </table>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <table class="vulnerability-1" style="padding-top: 13px;padding-bottom:10px;">
+                                <table class="vulnerability-1" style="padding-left: 15px;padding-top: 20px;" style="padding-top: 13px;padding-bottom:10px;" role="presentation">
                                     <tr>
-                                        <td class="vuln-titles">Severity</td>
-                                        <td class="vuln-colon">:</td>
-                                        <td class="vuln-desc" style="display: inline-block;">
-                                        <td class="vuln-desc" style="color: #FF0000">High</td>
-                                        <td><img style="padding-top:5px;" src="./images/first dot.jpg"
+                                        <td class="vuln-titles" style="padding-right: 3px;font-size: 12px;font-weight: 400;color: #666666">Severity</td>
+                                        <td class="vuln-colon" style="font-size: 12px;padding-right: 3px;">:</td>
+                                        <td class="vuln-desc" style="font-size: 12px;font-weight: 600;display: inline-block;">
+                                        <td class="vuln-desc" style="font-size: 12px;font-weight: 600;color: #FF0000">High</td>
+                                        <td><img style="padding-top:5px;" src="https://uploads-ssl.webflow.com/630228e0fbb6ee2e73e27f9b/63022934226cea543f568661_first%20dot.jpg"
                                                 alt="critical severity image"></td>
                             </td>
                         </tr>
@@ -440,14 +538,14 @@
         </tr>
         <tr>
             <td>
-                <table class="vuln-tables">
+                <table class="vuln-tables" style="margin-left: 35px;margin-bottom: 15px;border: 1px solid #EFF1F4;border-radius: 4px;width: 88.5%;" role="presentation">
                     <tr>
                         <td>
-                            <table class="vulnerability-1">
+                            <table class="vulnerability-1" style="padding-left: 15px;padding-top: 20px;" role="presentation">
                                 <tr>
-                                    <td class="vuln-titles">Issues </td>
-                                    <td class="vuln-colon">:</td>
-                                    <td class="vuln-desc">The private endpoint setting is not enabled for EKS ckusters
+                                    <td class="vuln-titles" style="padding-right: 3px;font-size: 12px;font-weight: 400;color: #666666">Issues </td>
+                                    <td class="vuln-colon" style="font-size: 12px;padding-right: 3px;">:</td>
+                                    <td class="vuln-desc" style="font-size: 12px;font-weight: 600;">The private endpoint setting is not enabled for EKS ckusters
                                     </td>
                                 </tr>
                             </table>
@@ -455,24 +553,24 @@
                     </tr>
                     <tr>
                         <td>
-                            <table class="vulnerability-1">
+                            <table class="vulnerability-1" style="padding-left: 15px;padding-top: 20px;" role="presentation">
                                 <tr>
-                                    <td class="vuln-titles">Affected Resources</td>
-                                    <td class="vuln-colon">:</td>
-                                    <td class="vuln-desc">1</td>
+                                    <td class="vuln-titles" style="padding-right: 3px;font-size: 12px;font-weight: 400;color: #666666">Affected Resources</td>
+                                    <td class="vuln-colon" style="font-size: 12px;padding-right: 3px;">:</td>
+                                    <td class="vuln-desc" style="font-size: 12px;font-weight: 600;">1</td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <table class="vulnerability-1" style="padding-top: 13px;padding-bottom:10px;">
+                            <table class="vulnerability-1" style="padding-left: 15px;padding-top: 20px;" style="padding-top: 13px;padding-bottom:10px;" role="presentation">
                                 <tr>
-                                    <td class="vuln-titles">Severity</td>
-                                    <td class="vuln-colon">:</td>
-                                    <td class="vuln-desc" style="display: inline-block;">
-                                    <td class="vuln-desc" style="color: #FF0000">High</td>
-                                    <td><img style="padding-top:5px;" src="./images/first dot.jpg"
+                                    <td class="vuln-titles" style="padding-right: 3px;font-size: 12px;font-weight: 400;color: #666666">Severity</td>
+                                    <td class="vuln-colon" style="font-size: 12px;padding-right: 3px;">:</td>
+                                    <td class="vuln-desc" style="font-size: 12px;font-weight: 600;display: inline-block;" >
+                                    <td class="vuln-desc" style="font-size: 12px;font-weight: 600;color: #FF0000">High</td>
+                                    <td><img style="padding-top:5px;" src="https://uploads-ssl.webflow.com/630228e0fbb6ee2e73e27f9b/63022934226cea543f568661_first%20dot.jpg"
                                             alt="critical severity image"></td>
                         </td>
                     </tr>
@@ -496,11 +594,10 @@
 
         <tr style="background-color: #F8F9FA;">
             <td>
-                <table width="100%"
-                    style="padding-left:35px;padding-top: 25px;text-align: left;font-size:12px;color: #888888;">
+                <table width="100%" style="padding-left:35px;padding-top: 25px;text-align: left;font-size:12px;color: #888888;" role="presentation">
                     <tr>
                         <td>
-                            <table>
+                            <table role="presentation">
                                 <tr>
                                     <td style="font-weight:400;width: 225px;">For any instant help, please contact us at
                                     </td>
@@ -512,11 +609,11 @@
                     </tr>
                     <tr>
                         <td>
-                            <table style="padding-top: 25px;padding-bottom:30px">
+                            <table style="padding-top: 25px;padding-bottom:30px" role="presentation">
                                 <tr>
-                                    <td style="padding-right:40px;"><img src="./images/twitter.png" alt="twitter logo">
+                                    <td style="padding-right:40px;"><img src="https://uploads-ssl.webflow.com/630228e0fbb6ee2e73e27f9b/630229514361af8b83c79f8a_twitter.png" alt="twitter logo">
                                     </td>
-                                    <td><img src="./images/linkedin.png" alt="linkedin logo"></td>
+                                    <td><img src="https://uploads-ssl.webflow.com/630228e0fbb6ee2e73e27f9b/6302294122ce742320ce3cb9_linkedin.png" alt="linkedin logo"></td>
                                 </tr>
                             </table>
                         </td>
